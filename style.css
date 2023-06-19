@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(88, 88, 254), #9842e4);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* utility classes */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background-color: #9842e4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background-color: rgba(0, 0, 0, 0.296);
+  margin: 1rem;
+  flex-direction: column;
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.result-container,
+.settings {
+  width: 100%;
+}
+
+.result-container {
+  background-color: lavender;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  padding-right: 0.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  height: 3.3rem;
+  color: #230258;
+}
+
+.result-container button {
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+}
+
+.result-container button i {
+  transition: all 0.5s;
+}
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.genBtn {
+  width: 100%;
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+  transition: all 0.5s;
+}
+
+.genBtn:active {
+  background-color: #862fd3;
+}
+
+@media (max-width: 350px) {
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .result-container {
+    height: 2.8rem;
+  }
+
+  .genBtn {
+    font-size: 1.1rem;
+  }
+
+  .result-container button {
+    padding: 0.3rem 0.4rem;
+    font-size: 1.3rem;
+  }
+}

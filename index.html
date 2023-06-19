@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container flex-center">
+      <h2 class="title">Password Generator</h2>
+
+      <div class="result-container">
+        <span id="result"></span>
+        <button class="btn flex-center" id="clipboard">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+      <div class="settings">
+        <div class="setting">
+          <label for="">Password Length</label>
+          <input
+            type="number"
+            name="characters"
+            id="legnth"
+            min="4"
+            max="20"
+            value="4"
+          />
+        </div>
+
+        <div class="setting">
+          <label for="uppercase">Include uppercase letters</label>
+          <input type="checkbox" name="characters" id="uppercase" checked />
+        </div>
+
+        <div class="setting">
+          <label for="lowercase">Include lowercase letters</label>
+          <input type="checkbox" name="characters" id="lowercase" checked />
+        </div>
+
+        <div class="setting">
+          <label for="numbers">Include numbers</label>
+          <input type="checkbox" name="characters" id="numbers" checked />
+        </div>
+
+        <div class="setting">
+          <label for="symbols">Include symbols</label>
+          <input type="checkbox" name="characters" id="symbols" />
+        </div>
+
+        <button type="button" class="btn genBtn" id="genBtn">
+          Generate Password
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
